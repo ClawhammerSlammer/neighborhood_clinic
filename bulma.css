@@ -1,0 +1,274 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+/* 
+font-family: 'Arimo', sans-serif;
+font-family: 'Chivo Mono', monospace;
+font-family: 'Poppins', sans-serif; */
+
+/* * {
+    outline: 1px solid red;
+} */
+
+html {
+    height: 100%
+}
+
+body {
+    min-height: 100%;
+    transition: background-color 1s;
+}
+
+.not-mobile {
+    display: none;
+}
+
+.navbar {
+    color: white;
+    background-color: rgb(16, 43, 253);
+    box-shadow: 0px 5px 5px rgb(127, 172, 251);
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    position: relative;
+    left: 10%;
+    font-weight: 800;
+}
+
+textarea {
+    font-size: 1em;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+#dateTimeCard {
+    font-family: "Arimo";
+    font-weight: 700;
+    font-size: 6em;
+    display: flex;
+    justify-content: space-around;
+}
+
+sup {
+    font-size: 0.65em;
+    position: relative;
+    top: 10%;
+    font-weight: 500;
+}
+
+.dark {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.timer-up-down {
+    display: flex;
+}
+
+.timer-up-down .button {
+    padding: 0 5px;
+}
+
+#timer-container {
+    font-family: "Chivo Mono";
+    font-size: 6rem;
+    text-align: center;
+    transition: background-color 1s, color 1s;
+}
+
+#date-display {
+    color: rgb(152, 255, 255);
+    font-size: 5 rem;
+    font-weight: 500;
+}
+
+i {
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+button i {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 1900px) {
+    .btn-label {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+
+    button i {
+        font-size: 1rem;
+    }
+
+    .btn-label {
+        display: none;
+    }
+
+    #timer-container {
+        font-family: "Chivo Mono";
+        font-size: 4rem;
+        text-align: center;
+        transition: background-color 1s, color 1s;
+    }
+
+    #date-display {
+        color: rgb(152, 255, 255);
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    #dateTimeCard {
+        font-family: "Arimo";
+        font-weight: 700;
+        font-size: 4em;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .label {
+        padding: 0 10px;
+        padding-top: 2px;
+        background-color: rgb(48, 48, 48);
+        color: white;
+        height: 1px;
+        font-size: 1.5rem;
+    }
+
+    .card-footer .label {
+        font-size: 1.2em;
+    }
+
+    .card-footer select {
+        font-size: 0.8rem;
+    }
+
+    .card-footer button {
+        height: 100%;
+    }
+
+    #volume-control .fa-solid {
+        outline: 1px solid red;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body>*:not(.navbar, .not-mobile) {
+        display: none;
+    }
+
+    .not-mobile {
+        display: block;
+    }
+}
+
+.main-title {
+    font-size: 2em;
+}
+
+.btn-label {
+    font-size: 1rem;
+}
+
+.label {
+    padding: 0 10px;
+    padding-top: 2px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 1px;
+    font-size: 1.5rem;
+}
+
+/* .border-left-grey {
+    border-left: 2px solid rgb(138, 136, 136);
+}
+
+.border-right-grey {
+    border-right: 2px solid rgb(138, 136, 136);
+} */
+
+.card-footer {
+    border: none;
+    border-bottom: 2px solid rgb(37, 37, 37);
+    background-color: rgb(48, 48, 48);
+    justify-content: space-around;
+}
+
+.grey-btn {
+    background-color: grey;
+    color: rgb(214, 214, 214)
+}
+
+.bg-red {
+    background-color: red;
+    color: black;
+}
+
+.bg-yellow {
+    background-color: rgb(255, 148, 1);
+
+}
+
+.field {
+    margin-bottom: 0;
+}
+
+.card-header {
+    background-color: rgb(185, 193, 201);
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-content {
+    padding-bottom: 0;
+}
+
+.volume-control {
+    font-size: 1.1 rem;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.order-div {
+    width: 100%;
+    position: relative;
+    font-family: "Arimo";
+    font-weight: 700;
+    font-size: 3em;
+}
+
+
+.delete-icon {
+    position: absolute;
+    right: 0;
+}
+
+.syringe {
+    padding: 0 25px
+}
+
+.red {
+    color: rgb(187, 0, 0);
+    font-size: 2rem;
+}
+
+.body-footer {
+    position: relative;
+    right: 0 width: 10%;
+    color: rgb(16, 43, 253);
+    text-align: end;
+    padding-right: 20px
+}
+
+.clock-footer {
+    font-size: 1.5em;
+    height: 40px;
+    color: rgb(204, 203, 203);
+}

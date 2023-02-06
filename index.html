@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mr. John's Clinic</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Chivo+Mono:wght@500&family=Poppins:wght@500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bulma.css">
+    <script src="https://kit.fontawesome.com/ed720a9094.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <span class="main-title">
+                <span class="syringe">&#128138</span><span id="header-title">Northwest Neighborhood
+                    Clinic</span><span class="syringe">&#128138</span></span>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="select">
+                    <select name="title-user" id="title-user">
+                        <option value="user">User</option>
+                        <option value="Alyxis">Alyxis</option>
+                        <option value="Denisse">Denisse</option>
+                        <option value="John">John</option>
+                        <option value="Keya">Keya</option>
+                        <option value="Maria">Maria</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- Start Orders Sections -->
+    <div class="column not-mobile">
+        <div class="card">
+            <div class="card-content">
+                This web app is not optimized for mobile use. Please open on laptop or desktop computer
+            </div>
+        </div>
+    </div>
+    <section id="orders">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-header-title">Orders</span>
+            </div>
+            <div class="card-content dark no-bottom-padding">
+                <div class="columns">
+                    <div class="box column is-four-fifths" id="orders-display">
+                        <!-- Display orders here  -->
+                    </div>
+                    <div class="field column is-one-fifth" id="orders-entry">
+                        <form action="/nowhere">
+                            <div class="field quick-field" id="quick-procedure-field">
+                                <label for="quick-procedure">Procedure</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select name="quick-procedure" id="quick-procedure">
+                                            <option value="none">Select</option>
+                                            <optgroup label="Injections">
+                                                <option value="IM Deltoid">IM Deltoid</option>
+                                                <option value="IM Glute">IM Glute</option>
+                                                <option value="SubQ">Subcutaneous</option>
+                                                <option value="ID">Intradermal</option>
+                                            </optgroup>
+                                            <optgroup label="Procedures">
+                                                <option value="Rapid Strep A">Rapid Strep A</option>
+                                                <option value="Rapid Mono">Rapid Mono</option>
+                                                <option value="Capillary Glucose">Capillary Glucose</option>
+                                                <option value="ECG">ECG</option>
+                                            </optgroup>
+                                            <optgroup label="Intake">
+                                                <option value="Vital Signs">Vitals Signs</option>
+                                                <option value="Chief Complaint">Chief Complaint</option>
+                                                <option value="Review of Systems">ROS</option>
+                                            </optgroup>
+                                            <optgroup label="Other">
+                                                <option value="other">Other</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field quick-field med-spec" id="select-medication">
+                                <label for="quick-med">Medication</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select name="quick-med" id="quick-med" disabled>
+                                            <option value="none">Select</option>
+                                            <optgroup label="Vaccines">
+                                                <option value="Flu Vaccine">Flu</option>
+                                                <option value="Hep A Vaccine">Hep-A</option>
+                                                <option value="Hep B Vaccine">Hep-B</option>
+                                                <option value="Hib">Hib</option>
+                                                <option value="Varicella">Varicella</option>
+                                                <option value="MMR">MMR</option>
+                                                <option value="Covid-19">Covid-19</option>
+                                            </optgroup>
+                                            <optgroup label="Tests">
+                                                <option value="PPD">PPD for TB</option>
+                                            </optgroup>
+                                            <optgroup label="Antibiotics">
+                                                <option value="Penicillin">Penicillin</option>
+                                                <option value="Amoxicillin">Amoxicillin</option>
+                                                <option value="Doxycycline">Doxycycline</option>
+                                                <option value="Ciprofloxacin">Ciprofloxacin</option>
+                                                <option value="Azithromycin">Azithromycin</option>
+                                            </optgroup>
+                                            <optgroup label="Supplmentary">
+                                                <option value="B-12">Vitamin B-12</option>
+                                                <option value="Testosterone">Testosterone</option>
+                                                <option value="Estradiol">Estradiol</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field quick-field med-spec">
+                                <label for="quick-dose">Dosage</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select name="quick-dose" id="quick-dose" disabled>
+                                            <option value="none">Select</option>
+                                            <option value="0.5mL">0.5 mL</option>
+                                            <option value="1.0 mL" class="value">1.0 mL</option>
+                                            <option value="1.5 mL" class="value">1.5 mL</option>
+                                            <option value="2.0 mL" class="value">2.0 mL</option>
+                                            <option value="2.5 mL" class="value">2.5 mL</option>
+                                            <option value="3.0 mL" class="value">3.0 mL</option>
+                                            <option value="none" class="value">N/A</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="free-text">Enter notes or order:</label>
+                                <div class="control">
+                                    <textarea name="free-text" id="free-text" cols="30" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="field is-grouped bottom-align">
+                                <div class="control">
+                                    <button class="button is-info" id="submit-btn">Submit</button>
+                                </div>
+                                <div class="control">
+                                    <button class="button is-info is-light" id="cancel-btn">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Chronos Section -->
+    <section id="chronos">
+        <div class="columns">
+            <div class="column" id="timer">
+                <div class="card">
+                    <header class="card-header">
+                        <span class="card-header-title">Timer</span>
+                        <div class="volume-control" id="volume-control">
+                            <i class="fa-solid fa-volume-off"></i>
+                            <input type="range" id="volume-value" min="0" max="1" step="0.1">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </div>
+                    </header>
+                    <div class="card-content dark" id="timer-container">
+                        <span id="timer-minutes-display">00</span>:<span id="timer-seconds-display">00</span>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="select" id="quick-set-select">
+                            <select name="quick-set" id="quick-set">
+                                <option value="quick" selected>Quick</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                            </select>
+                        </div>
+                        <div class="timer-up-down border-left-grey" id="minutes-set">
+                            <span class="label" id="minutes-lbl">Minutes</span>
+                            <button id='minutes-up' class="button"><span><i
+                                        class="fa-solid fa-plus"></i></span></button>
+                            <button id='minutes-down' class="button grey-btn"><span><i
+                                        class="fa-solid fa-minus"></i></span></button>
+                        </div>
+                        <div class="timer-up-down border-left-grey border-right-grey" id="seconds-set">
+                            <span class="label" id="seconds-lbl">Seconds</span>
+                            <button id='seconds-up' class="button"><span><i
+                                        class="fa-solid fa-plus"></i></span></button>
+                            <button id='seconds-down' class="button grey-btn"><span><i
+                                        class="fa-solid fa-minus"></i></span></button>
+                        </div>
+                        <div id="timer-control-buttons">
+                            <button class="button is-success" id="start-btn"><span class="btn-label">Start
+                                    Timer</span><i class="fa-solid fa-play"></i></button>
+                            <button class="button is-warning" id="pause-btn"><span class="btn-label">Pause</span><i
+                                    class="fa-solid fa-pause"></i></button>
+                            <button class="button is-danger" id="reset-btn"><span class="btn-label">Reset</span><i
+                                    class="fa-solid fa-clock-rotate-left"></i></button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+            <!-- Start Clock Sections -->
+            <div class="column" id="clock">
+                <div class="card">
+                    <header class="card-header">
+                        <span class="card-header-title">Clock</span>
+                    </header>
+                    <div class="card-content dark" id="dateTimeCard">
+                        <span id="clock-display">12:34 pm</span>
+                        <span id="date-display"></span>
+                    </div>
+                    <footer class="card-footer clock-footer">
+                        <em>And that clock whose sound was the voice of our lives . . .</em>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="body-footer">
+        <div class="footer-text">
+            A Mr. Justin Design
+        </div>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
